@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const num=window.prompt();
+    const str=num.toString();
+    const resul = [str[0]];
+
+    for (let i = 0; i <str.length ; i++) {
+        if((str[i-1]%2===0)&&(str[i]%2===0))
+        {
+            resul.push('-', str[i]);
+        }
+        else
+        {
+            resul.push(str[i]);
+        }
+    }
+    console.log(resul.join(''));
+
+
+</script>
+
+</body>
+</html>

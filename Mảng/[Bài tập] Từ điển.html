@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhap tu dien");
+    let tienganh = ["read","watch","play","game","study"];
+    let tiengviet = ["đọc","xem"," chơi"," trò chơi","học"];
+    let check = true;
+
+    for (let i = 0; i <tienganh.length ; i++) {
+        if (str === tienganh[i]){
+            alert(tiengviet[i]);
+            check = false
+        }
+    }
+    if(check){
+    alert("không tìm thấy");}
+</script>
+
+</body>
+</html>
